@@ -1,0 +1,43 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #000;
+	color: #fff;
+	overflow: hidden;
+}
+
+article {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	opacity: 1;
+	animation: moveIn 20s infinite;
+	text-align: center;
+	padding-top: 25vh;
+}
+
+@keyframes moveIn {
+	0%{
+		font-size: 1em;
+		//left: 0;
+		opacity: 0;
+		text-shadow: none;
+	}
+	10%{
+		opacity: 1;
+		text-shadow: .2em -.1em 25px #aaa;
+
+	}
+	80%{
+			font-size: 8em;
+			opacity: 1;
+	}
+	100%{
+			font-size: 10em;
+			opacity: 0;
+			text-shadow: .02em -.02em 25px #aaa;		
+	}
+}
